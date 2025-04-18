@@ -1,0 +1,18 @@
+# Xcode
+.DS_Store
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Environment & Secrets
+Sources/App/Config/APIConfig.swift
+
+# Other
+*.moved-aside
+*.xcuserstate
+*.xcworkspace
+!default.xcworkspace 
