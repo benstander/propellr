@@ -10,6 +10,8 @@ xcuserdata/
 
 # Environment & Secrets
 Sources/App/Config/APIConfig.swift
+*.xcconfig
+!*.xcconfig.template
 
 # Other
 *.moved-aside

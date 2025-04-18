@@ -1,69 +1,93 @@
 import SwiftUI
 
 struct ConnectBankView: View {
-    @StateObject private var viewModel: BankConnectionViewModel
-    @State private var showingError = false
+    @Environment(\.dismiss) private var dismiss
+    @State private var isLoading = false
+    @State private var error: String?
+    @State private var authURL: String?
     
-    init() {
-        _viewModel = StateObject(wrappedValue: BankConnectionViewModel(apiKey: APIConfig.BASIQ_API_KEY))
-    }
+    private let basiqService = BasiqService()
     
     var body: some View {
-        VStack(spacing: 20) {
-            if viewModel.isLoading {
-                ProgressView()
-                    .scaleEffect(1.5)
-            } else {
-                // Show available banks
-                ScrollView {
-                    LazyVStack(spacing: 16) {
-                        ForEach(viewModel.institutions) { institution in
-                            HStack {
-                                AsyncImage(url: institution.logo) { image in
-                                    image
-                                        .resizable()
-                                        .scaledToFit()
-                                } placeholder: {
-                                    Color.gray.opacity(0.2)
-                                }
-                                .frame(width: 40, height: 40)
-                                .cornerRadius(8)
-                                
-                                VStack(alignment: .leading) {
-                                    Text(institution.name)
-                                        .font(.headline)
-                                    Text(institution.country)
-                                        .font(.caption)
-                                        .foregroundColor(.secondary)
-                                }
-                                
-                                Spacer()
-                                
-                                Image(systemName: "chevron.right")
-                                    .foregroundColor(.secondary)
-                            }
-                            .padding()
-                            .background(Color.white)
-                            .cornerRadius(12)
-                            .shadow(color: .black.opacity(0.05), radius: 2, x: 0, y: 1)
-                        }
+        NavigationView {
+            VStack(spacing: 20) {
+                if isLoading {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle())
+                } else if let error = error {
+                    VStack(spacing: 16) {
+                        Image(systemName: "exclamationmark.triangle")
+                            .font(.system(size: 50))
+                            .foregroundColor(.red)
+                        
+                        Text(error)
+                            .multilineTextAlignment(.center)
                     }
-                    .padding()
+                } else if let authURL = authURL {
+                    Link(destination: URL(string: authURL)!) {
+                        Text("Connect Your Bank")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.black)
+                            .cornerRadius(10)
+                    }
+                    .padding(.horizontal)
+                } else {
+                    Button {
+                        Task {
+                            await connectBank()
+                        }
+                    } label: {
+                        Text("Start Bank Connection")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.black)
+                            .cornerRadius(10)
+                    }
+                    .padding(.horizontal)
+                }
+            }
+            .navigationTitle("Connect Bank")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button("Cancel") {
+                        dismiss()
+                    }
                 }
             }
         }
-        .task {
-            // Load banks when view appears
-            await viewModel.loadInstitutions()
+    }
+    
+    private func connectBank() async {
+        isLoading = true
+        error = nil
+        
+        do {
+            // In a real app, you would get these values from your user management system
+            let userId = try await basiqService.createUser(
+                email: "user@example.com",
+                mobile: "+61400000000"
+            )
+            
+            let authURL = try await basiqService.createAuthLink(
+                userId: userId,
+                mobile: "+61400000000"
+            )
+            
+            await MainActor.run {
+                self.authURL = authURL
+                isLoading = false
+            }
+        } catch {
+            await MainActor.run {
+                self.error = error.localizedDescription
+                isLoading = false
+            }
         }
-        .alert("Error", isPresented: $showingError) {
-            Button("OK", role: .cancel) {}
-        } message: {
-            Text(viewModel.error ?? "An unknown error occurred")
-        }
-        .onChange(of: viewModel.error) { error in
-            showingError = error != nil
-        }
-        .navigationTitle("Connect Bank")
     }
 } 
