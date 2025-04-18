@@ -1,8 +1,7 @@
 import SwiftUI
 import Foundation
 
-// Import local modules
-import App
+
 
 @MainActor
 class BankConnectionViewModel: ObservableObject {

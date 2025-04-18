@@ -6,53 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		F0B02F7A2DABC83000C433C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F0B02F612DABC82E00C433C4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F0B02F682DABC82E00C433C4;
-			remoteInfo = caddie;
-		};
-		F0B02F842DABC83000C433C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F0B02F612DABC82E00C433C4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F0B02F682DABC82E00C433C4;
-			remoteInfo = caddie;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		F0B02F692DABC82E00C433C4 /* caddie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = caddie.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0B02F792DABC83000C433C4 /* caddieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = caddieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0B02F832DABC83000C433C4 /* caddieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = caddieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0E5F1DF2DB289CE000B27F8 /* propellr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = propellr.app; path = "/Users/benstander/apps/propellr/build/Debug-iphoneos/propellr.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		F0B02F6B2DABC82E00C433C4 /* caddie */ = {
+		F0E5F1E02DB289CE000B27F8 /* propellr */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = caddie;
+			path = propellr;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F0B02F662DABC82E00C433C4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F0B02F762DABC83000C433C4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F0B02F802DABC83000C433C4 /* Frameworks */ = {
+		F0E5F1DC2DB289CE000B27F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,85 +32,34 @@
 		F0B02F602DABC82E00C433C4 = {
 			isa = PBXGroup;
 			children = (
-				F0B02F6B2DABC82E00C433C4 /* caddie */,
-				F0B02F6A2DABC82E00C433C4 /* Products */,
+				F0E5F1E02DB289CE000B27F8 /* propellr */,
 			);
-			sourceTree = "<group>";
-		};
-		F0B02F6A2DABC82E00C433C4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F0B02F692DABC82E00C433C4 /* caddie.app */,
-				F0B02F792DABC83000C433C4 /* caddieTests.xctest */,
-				F0B02F832DABC83000C433C4 /* caddieUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F0B02F682DABC82E00C433C4 /* caddie */ = {
+		F0E5F1DE2DB289CE000B27F8 /* propellr */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0B02F8D2DABC83000C433C4 /* Build configuration list for PBXNativeTarget "caddie" */;
+			buildConfigurationList = F0E5F2002DB289D0000B27F8 /* Build configuration list for PBXNativeTarget "propellr" */;
 			buildPhases = (
-				F0B02F652DABC82E00C433C4 /* Sources */,
-				F0B02F662DABC82E00C433C4 /* Frameworks */,
-				F0B02F672DABC82E00C433C4 /* Resources */,
+				F0E5F1DB2DB289CE000B27F8 /* Sources */,
+				F0E5F1DC2DB289CE000B27F8 /* Frameworks */,
+				F0E5F1DD2DB289CE000B27F8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				F0B02F6B2DABC82E00C433C4 /* caddie */,
+				F0E5F1E02DB289CE000B27F8 /* propellr */,
 			);
-			name = caddie;
+			name = propellr;
 			packageProductDependencies = (
 			);
-			productName = caddie;
-			productReference = F0B02F692DABC82E00C433C4 /* caddie.app */;
+			productName = propellr;
+			productReference = F0E5F1DF2DB289CE000B27F8 /* propellr.app */;
 			productType = "com.apple.product-type.application";
-		};
-		F0B02F782DABC83000C433C4 /* caddieTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F0B02F902DABC83000C433C4 /* Build configuration list for PBXNativeTarget "caddieTests" */;
-			buildPhases = (
-				F0B02F752DABC83000C433C4 /* Sources */,
-				F0B02F762DABC83000C433C4 /* Frameworks */,
-				F0B02F772DABC83000C433C4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F0B02F7B2DABC83000C433C4 /* PBXTargetDependency */,
-			);
-			name = caddieTests;
-			packageProductDependencies = (
-			);
-			productName = caddieTests;
-			productReference = F0B02F792DABC83000C433C4 /* caddieTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F0B02F822DABC83000C433C4 /* caddieUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F0B02F932DABC83000C433C4 /* Build configuration list for PBXNativeTarget "caddieUITests" */;
-			buildPhases = (
-				F0B02F7F2DABC83000C433C4 /* Sources */,
-				F0B02F802DABC83000C433C4 /* Frameworks */,
-				F0B02F812DABC83000C433C4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F0B02F852DABC83000C433C4 /* PBXTargetDependency */,
-			);
-			name = caddieUITests;
-			packageProductDependencies = (
-			);
-			productName = caddieUITests;
-			productReference = F0B02F832DABC83000C433C4 /* caddieUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -155,20 +71,12 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					F0B02F682DABC82E00C433C4 = {
+					F0E5F1DE2DB289CE000B27F8 = {
 						CreatedOnToolsVersion = 16.2;
-					};
-					F0B02F782DABC83000C433C4 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = F0B02F682DABC82E00C433C4;
-					};
-					F0B02F822DABC83000C433C4 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = F0B02F682DABC82E00C433C4;
 					};
 				};
 			};
-			buildConfigurationList = F0B02F642DABC82E00C433C4 /* Build configuration list for PBXProject "caddie" */;
+			buildConfigurationList = F0B02F642DABC82E00C433C4 /* Build configuration list for PBXProject "propellr" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -178,33 +86,17 @@
 			mainGroup = F0B02F602DABC82E00C433C4;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = F0B02F6A2DABC82E00C433C4 /* Products */;
+			productRefGroup = F0B02F602DABC82E00C433C4;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F0B02F682DABC82E00C433C4 /* caddie */,
-				F0B02F782DABC83000C433C4 /* caddieTests */,
-				F0B02F822DABC83000C433C4 /* caddieUITests */,
+				F0E5F1DE2DB289CE000B27F8 /* propellr */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F0B02F672DABC82E00C433C4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F0B02F772DABC83000C433C4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F0B02F812DABC83000C433C4 /* Resources */ = {
+		F0E5F1DD2DB289CE000B27F8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -214,21 +106,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F0B02F652DABC82E00C433C4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F0B02F752DABC83000C433C4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F0B02F7F2DABC83000C433C4 /* Sources */ = {
+		F0E5F1DB2DB289CE000B27F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -236,19 +114,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F0B02F7B2DABC83000C433C4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F0B02F682DABC82E00C433C4 /* caddie */;
-			targetProxy = F0B02F7A2DABC83000C433C4 /* PBXContainerItemProxy */;
-		};
-		F0B02F852DABC83000C433C4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F0B02F682DABC82E00C433C4 /* caddie */;
-			targetProxy = F0B02F842DABC83000C433C4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F0B02F8B2DABC83000C433C4 /* Debug */ = {
@@ -370,7 +235,7 @@
 			};
 			name = Release;
 		};
-		F0B02F8E2DABC83000C433C4 /* Debug */ = {
+		F0E5F2012DB289D0000B27F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -391,7 +256,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hybrid.caddie;
+				PRODUCT_BUNDLE_IDENTIFIER = hybrid.propellr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -399,7 +264,7 @@
 			};
 			name = Debug;
 		};
-		F0B02F8F2DABC83000C433C4 /* Release */ = {
+		F0E5F2022DB289D0000B27F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -420,90 +285,18 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hybrid.caddie;
+				PRODUCT_BUNDLE_IDENTIFIER = hybrid.propellr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		F0B02F912DABC83000C433C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N3GS5YT5J2;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hybrid.caddieTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/caddie.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/caddie";
-			};
-			name = Debug;
-		};
-		F0B02F922DABC83000C433C4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N3GS5YT5J2;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hybrid.caddieTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/caddie.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/caddie";
-			};
-			name = Release;
-		};
-		F0B02F942DABC83000C433C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N3GS5YT5J2;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hybrid.caddieUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = caddie;
-			};
-			name = Debug;
-		};
-		F0B02F952DABC83000C433C4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N3GS5YT5J2;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hybrid.caddieUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = caddie;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F0B02F642DABC82E00C433C4 /* Build configuration list for PBXProject "caddie" */ = {
+		F0B02F642DABC82E00C433C4 /* Build configuration list for PBXProject "propellr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F0B02F8B2DABC83000C433C4 /* Debug */,
@@ -512,29 +305,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F0B02F8D2DABC83000C433C4 /* Build configuration list for PBXNativeTarget "caddie" */ = {
+		F0E5F2002DB289D0000B27F8 /* Build configuration list for PBXNativeTarget "propellr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F0B02F8E2DABC83000C433C4 /* Debug */,
-				F0B02F8F2DABC83000C433C4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F0B02F902DABC83000C433C4 /* Build configuration list for PBXNativeTarget "caddieTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F0B02F912DABC83000C433C4 /* Debug */,
-				F0B02F922DABC83000C433C4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F0B02F932DABC83000C433C4 /* Build configuration list for PBXNativeTarget "caddieUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F0B02F942DABC83000C433C4 /* Debug */,
-				F0B02F952DABC83000C433C4 /* Release */,
+				F0E5F2012DB289D0000B27F8 /* Debug */,
+				F0E5F2022DB289D0000B27F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

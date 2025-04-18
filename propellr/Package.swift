@@ -2,22 +2,24 @@
 import PackageDescription
 
 let package = Package(
-    name: "Caddie",
+    name: "propellr",
     platforms: [
         .iOS(.v16)
     ],
     products: [
         .library(
-            name: "Caddie",
-            targets: ["Caddie"]),
+            name: "propellr",
+            targets: ["propellr"]),
     ],
     dependencies: [
-        // Dependencies here
+        .package(url: "https://github.com/basiqio/basiq-ios-sdk.git", from: "2.0.0")
     ],
     targets: [
         .target(
-            name: "Caddie",
-            dependencies: [],
+            name: "propellr",
+            dependencies: [
+                .product(name: "Basiq", package: "basiq-ios-sdk")
+            ],
             path: "Sources"
         )
     ]
